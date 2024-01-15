@@ -1,16 +1,16 @@
-# SyntaxError: cannot assign to literal here
-# "univ" = "Inha university"
-# 99 = 99
+x = 2
+y = x + 5
+print(y)
 
-#Ok
-abc = 7
-Abc = 8
-ABC = 6
-print(abc, ABC, Abc)
+print(type(3.14)) #float
+print(type(3.14) == float) #True
+print(isinstance(3.14, float)) #True
+print(isinstance("Inha", float)) #False
+print(isinstance(55, float)) #False
 
-test9 = 77
-#9test = 77
-_9test = 77
-print(test9, _9test)
-
-# False = 123 # reserved messege
+artists = ['BTS', '뉴진스', '핑클', 'SES', 'HOT', '블랙핑크']
+groups = artists
+artists[2] = '세븐틴'
+print(artists, groups)
+artists[2] = '세븐틴'
+print(artists, groups)
