@@ -1,19 +1,16 @@
-univ = "Inha university"
-print(univ)
-print(univ[5])
-# univ[5] = 'U' #immutable #불변
-# print(univ)
-subjects = ['python', 'c++', 'linux', 'data structure', 'database']
-print(subjects)
-print(subjects[3])
-subjects[3] = 'data structure & algorithm'  #mutable 가변성
-print(subjects)
+# SyntaxError: cannot assign to literal here
+# "univ" = "Inha university"
+# 99 = 99
 
+#Ok
+abc = 7
+Abc = 8
+ABC = 6
+print(abc, ABC, Abc)
 
-# print(0.1)
-# print(1e-1)
-# print(0.01)
-# print(1e-2)
-# print(3.141592)
-# print(21000)
-# print(21_000)
+test9 = 77
+#9test = 77
+_9test = 77
+print(test9, _9test)
+
+# False = 123 # reserved messege
