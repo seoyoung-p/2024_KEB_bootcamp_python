@@ -1,20 +1,17 @@
-# Assignment(loop)
-# (100℉ - 32) * 5/9 = 3.778℃
-# (0°C × 9/5) + 32 = 32°F
+university = "Inha\nUniversity!"
+#university = r"Inha\nUniversity!"  # raw string
+#print(university)
 
-while True :
-    menu = input("1) Fahrenheit -> Celsius  2) Fahrenheit -> Celsius  3) Quit program : ")
+# slicing
+# print(university[:4])
+# print(university[:-11])
+# print(len(university))
+# print(university[0:len(university)])
+# print(university[:16])
+# print(university[::2])
 
-    if menu =='1':
-        fahrenheit = float(input('Input Fahrenheit : '))
-        print(
-            f'fahrenheit : {fahrenheit}F, Celsius : {((fahrenheit - 32.0) * 5.0 / 9.0):.4f}C')
-        # .2f로 소수점 2번쨰자리까지 출력 (f스트링 서식)
-    elif menu == '2':
-        celsius = float(input('Input Celsius : '))
-        print(f'celsius : {celsius}C, Fahrenheit : {((celsius*9.0/5.0)+32.0):.4f}F')
-    elif menu == '3' :
-        print("Terminate program")
-        break
-    else :
-        print("choose number 1 or 2 or 3!")
+number1 = input("First number : ")
+number2 = input("Second number : ")
+print(number1 + number2)  # concatenation
+print(number1 * 3)  # duplicate
+print(number1 + 3)  # TypeError: can only concatenate str (not "int") to str
