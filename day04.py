@@ -1,52 +1,24 @@
-# Assignment (add prime series program)
-while True:
-    menu = input("1) Fahrenheit -> Celsius   2) Celsius -> Fahrenheit   3) Prime1   4) Prime2   5) Quit program : ")
+# prime number
+numbers = input("Input first second number : ").split()
+n1 = int(numbers[0])
+n2 = int(numbers[1])
 
-    if menu == '1':
-        fahrenheit = float(input('Input Fahrenheit : '))
-        print(f'Fahrenheit : {fahrenheit}F, Celsius : {((fahrenheit-32.0)*5.0/9.0):.4f}C')
-    elif menu == '2':
-        celsius = float(input('Input Celsius : '))
-        print(f'Celsius : {celsius}C, Fahrenheit : {((celsius*9.0/5.0)+32.0):.4f}F')
-    elif menu == '3':
-        number = int(input("Input number : "))
-        is_prime = True
+if n1 > n2:
+    n1, n2 = n2, n1
 
-        if number < 2:
-            print(f'{number} is NOT prime number!')
-        else:
-            for i in range(2, number):
-                if number % i == 0:
-                    is_prime = False
-                    break
+for number in range(n1, n2+1):
+    is_prime = True
 
-            if is_prime:
-                print(f'{number} is prime number')
-            else:
-                print(f'{number} is NOT prime number!')
-    elif menu == '4':
-        numbers = input("Input first second number : ").split()
-        n1 = int(numbers[0])
-        n2 = int(numbers[1])
-
-        if n1 > n2:
-            n1, n2 = n2, n1
-
-        for number in range(n1, n2 + 1):
-            is_prime = True
-
-            if number < 2:
-                # pass
-                continue
-            else:
-                for i in range(2, number):
-                    if number % i == 0:
-                        is_prime = False
-                        break
-                if is_prime: print(number, end=' ')
-        print()
-    elif menu == '5':
-        print('Terminate Program.')
-        break
+    if number < 2:
+        continue  #pass
     else:
-        print('Invalid Menu!')
+        i = 2
+        while i*i < number:  # performance issue
+            if number % i == 0:
+                is_prime = False
+                break
+            i = i + 1
+            #print(i, end=' ')  # loop count
+        if is_prime:
+            pass
+            print(number, end=' ')
