@@ -5,7 +5,7 @@ class Pokemon():
         self.attack_rate = attack_rate
         self.defence_rate = defence_rate
     def attack(self, target, skill):
-        attack_start = self.attack_rate + self.skills.get(skill) - target.defece_rate
+        attack_start = self.attack_rate + self.skills.get(skill) - target.defence_rate
         target.hp -= attack_start
         print(f'{self.name}이 {self.skills.get(skill)}을 {target.name}에게 시전!')
         if target.hp > 0 :
