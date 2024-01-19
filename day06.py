@@ -39,3 +39,9 @@ c1 = Charizard("리자몽")
 print(g1.name)
 g1.name = "잉어킹"
 print(g1.name)
+
+# property2
+print(g1.name)
+g1.name = "잉어킹"
+print(g1.name)
+print(g1.hidden_name)
