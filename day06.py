@@ -10,13 +10,22 @@ class Pokemon:
     def __init__(self, name):
         self.name = name
 
-class Charizaard(Pokemon, FlyingMixin):
+    def attack(self):
+        print("공격~")
+
+class Charizard(Pokemon, FlyingMixin):
     pass
 
 class Gyarados(Pokemon, SwimmingMixin):
     pass
 
 g1 = Gyarados("갸라도스")
-c1 = Charizaard("리자몽")
-print(g1.swim())
-print(c1.fly())
+c1 = Charizard("리자몽")
+# print(c1.fly())
+# print(g1.swim())
+# c1.attack()
+# #Charizard.attack()
+# Charizard.attack(c1)
+print(g1.name)
+g1.name = "잉어킹"
+print(g1.name)
