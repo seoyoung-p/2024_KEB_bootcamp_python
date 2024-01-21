@@ -16,6 +16,7 @@ class Pokemon():
         else :
             print(f'{target.name}이 사망하였습니다.')
 
+
     def evolve(self):
         can_evolve = int(random()*3)+1
         print(can_evolve)
