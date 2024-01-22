@@ -32,7 +32,6 @@ while game :
         print(player_skill)
         skill = input('공격을 골라 입력해주세요 : ')
         player.attack(target, skill)
-
     if menu == '2':
         print("상대할 수 없는 적이 나타났습니다. 후퇴합니다!")
         target_maker()
