@@ -15,4 +15,17 @@ def isprime(n) -> bool:
         return True
 
 def fahrenheit_to_celsius(fahrenheit)-> float:
-   return ((fahrenheit - 32.0) * 5.0 / 9.0)
+    """
+    Function to convert Fahrenheit temperature to Celsius temperature
+    :param fahrenheit:
+    :return: celsius temperature
+    """
+    return (fahrenheit - 32.0) * 5.0 / 9.0
+
+def celsius_to_fahrenheit(celsius)-> float:
+    """
+    Function to convert Celsius temperature to Fahrenheit temperature
+    :param celsius:
+    :return: fahrenheit temperature
+    """
+    return (celsius * 9.0 / 5.0) + 32.0
