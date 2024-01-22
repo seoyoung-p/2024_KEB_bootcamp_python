@@ -25,6 +25,9 @@ class Pokemon:
     def __str__(self):
         return self.__name + " 입니다"
 
+    def __add__(self, target):
+        return f"두 포켓몬스터 체력의 합은 {self.hp + target.hp} 입니다."
+
 
 class Charizard(Pokemon, FlyingMixin):
     pass
