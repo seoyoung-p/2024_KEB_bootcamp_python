@@ -29,6 +29,10 @@ class Pokemon:
         self.fly_behavior = fly  # aggregation (has-a)
 
 
+    def set_fly_behavior(self, fly):
+        self.fly_behavior = fly
+
+
     def attack(self):
         print("공격~")
 
@@ -65,3 +69,5 @@ print(p1)
 print(c1)
 print(p1+c1)
 #print(g1+200)
+p1.set_fly_behavior(JetPack())
+print(p1.fly_behavior.fly())
